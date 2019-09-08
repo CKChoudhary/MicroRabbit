@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Domain.Core", "MicroRabbit.Domain.Core\MicroRabbit.Domain.Core.csproj", "{D936B200-49DC-4FA0-9B1A-9FCBF6281947}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{BC8B482C-69BC-4318-8239-C1C673F1CB7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroRabbit.Infra.Bus", "MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj", "{BC8B482C-69BC-4318-8239-C1C673F1CB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Infra.IoC", "MicroRabbit.Infra.IoC\MicroRabbit.Infra.IoC.csproj", "{33474EF4-5350-4A2D-A6F7-666DA1AB9CFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{BC8B482C-69BC-4318-8239-C1C673F1CB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC8B482C-69BC-4318-8239-C1C673F1CB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC8B482C-69BC-4318-8239-C1C673F1CB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33474EF4-5350-4A2D-A6F7-666DA1AB9CFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33474EF4-5350-4A2D-A6F7-666DA1AB9CFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33474EF4-5350-4A2D-A6F7-666DA1AB9CFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33474EF4-5350-4A2D-A6F7-666DA1AB9CFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D936B200-49DC-4FA0-9B1A-9FCBF6281947} = {559BC94B-8954-4C7A-BFAB-32199D67856D}
 		{BC8B482C-69BC-4318-8239-C1C673F1CB7A} = {C2511B6F-4438-46E4-904B-72DBF0273744}
+		{33474EF4-5350-4A2D-A6F7-666DA1AB9CFA} = {4DC09AC7-C6AA-4594-8B4C-20BB4DD5F234}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1F5BD32-0533-4B95-8706-772863E0B46A}
