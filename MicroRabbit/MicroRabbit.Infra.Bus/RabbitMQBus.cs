@@ -30,8 +30,6 @@ namespace MicroRabbit.Infra.Bus
         {
             return _mediator.Send(command);
         }
-
-
         public void Publish<T>(T @event) where T : Event
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
@@ -47,8 +45,6 @@ namespace MicroRabbit.Infra.Bus
 
             }
         }
-
-
         public void Subscribe<T, TH>()   where T : Event where TH : IEventHandler<T>
         {
             var eventName = typeof(T).Name;
@@ -70,7 +66,6 @@ namespace MicroRabbit.Infra.Bus
             StartBasicConsume<T>();
 
         }
-
         private void StartBasicConsume<T>() where T : Event
         {
             var factory = new ConnectionFactory() { HostName = "localhost", DispatchConsumersAsync = true };
@@ -83,7 +78,6 @@ namespace MicroRabbit.Infra.Bus
             channel.BasicConsume(eventName, true, consumer);
 
         }
-
         private async Task Consumer_Received(object sender, BasicDeliverEventArgs e)
         {
             var eventName = e.RoutingKey;
@@ -96,7 +90,6 @@ namespace MicroRabbit.Infra.Bus
 
             }
         }
-
         private async Task ProcessEvent(string eventName, string message)
         {
             if (_handlers.ContainsKey(eventName))
